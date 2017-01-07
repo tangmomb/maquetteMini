@@ -1,0 +1,33 @@
+.header {
+	height: 1165px;
+	background: url(img/header.jpg) center top repeat;
+	background-size: cover;
+}
+
+.header-logo {
+	display: block;
+	float: left;
+	padding-top: 80px;
+}
+
+a {
+	color: inherit;
+	text-decoration: none;
+}
+
+.menu {
+	font-size: 18px;
+	color: #FFFFFF;
+	font-weight: 600; 
+}
+
+.menu-item {
+	&:before {
+	content: '//';
+	padding: 0 37px;
+	display: inline-block;
+	}
+	
+	&:first-child:before {display: none;}
+	
+}
