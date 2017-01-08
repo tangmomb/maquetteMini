@@ -1,0 +1,29 @@
+@import 'base/color';
+
+.button {
+	display: inline-block;
+	padding: 0 40px;
+	background-color: $couleurPrimaire;
+	font-size: 15px;
+	color: $couleurNeutre2;
+	line-height: 40px;
+	text-transform: uppercase;
+	
+	
+}
+
+.buttonSubject {
+	display: inline-block;
+	padding: 0 40px;
+	background-color: $couleurNeutre3;
+	font-size: 15px;
+	color: $couleurNeutre2;
+	line-height: 40px;
+	text-transform: uppercase;
+	
+	&:hover {
+		background-color: $couleurPrimaire;
+	}
+	
+	
+}

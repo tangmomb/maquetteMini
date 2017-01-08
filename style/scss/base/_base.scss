@@ -1,14 +1,30 @@
+@import 'base/color';
+
 body {
 	margin: 0;
 	padding: 0;
 	font-size: 16px;
 	font-family: 'Open Sans', sans-serif;
-	color: #737373;
+	color: $couleurNeutre3;
 	line-height: 1.75; //la hauteur de ligne fera 175% de la police
 }
 
 h2 {
-	color: black;
+	color: $couleurNeutre;
 	font-size: 20px;
 	line-height: 1.25;
+}
+
+.cb {
+	clear: both; //casse la suite du code
+}
+
+p{
+	padding: 0;
+	margin: 0;
+	margin-bottom: 20px;
+}
+
+h1 {
+	color: $couleurNeutre;
 }
