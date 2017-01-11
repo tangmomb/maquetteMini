@@ -254,4 +254,10 @@ a {
   text-align: left;
   padding-left: 40px; }
 
+.section8 {
+  background: url(img/header.jpg); }
+  .section8 .section8-img {
+    text-align: center;
+    padding: 450px 0 450px 0; }
+
 /*# sourceMappingURL=style.css.map */
