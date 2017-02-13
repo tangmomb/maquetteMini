@@ -8,8 +8,13 @@
 	color: $couleurNeutre2;
 	line-height: 40px;
 	text-transform: uppercase;
+	transition-property: background-color; 
+    transition-duration: 1s; /*ces 2 lignes pour dégradé du hover*/
+	border-radius: 10px;
 	
-	
+	&:hover {
+		background-color: aqua;
+	}
 }
 
 .buttonSubject {
@@ -20,6 +25,9 @@
 	color: $couleurNeutre2;
 	line-height: 40px;
 	text-transform: uppercase;
+	transition-property: background-color; 
+    transition-duration: 1s; /*ces 2 lignes pour dégradé du hover*/
+	border-radius: 10px;
 	
 	&:hover {
 		background-color: $couleurPrimaire;

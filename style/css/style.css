@@ -1,3 +1,4 @@
+@charset "UTF-8";
 body {
   margin: 0;
   padding: 0;
@@ -49,17 +50,22 @@ a {
   color: white;
   font-weight: 600; }
 
-.menu-item:before {
-  content: '//';
-  padding: 0 37px;
-  display: inline-block;
-  color: white; }
-.menu-item:first-child:before {
-  display: none; }
-.menu-item:hover {
-  color: black; }
-.menu-item.is-active {
-  color: black; }
+.menu-item {
+  color: white;
+  transition-property: color;
+  transition-duration: 1s;
+  /*ces 2 lignes pour d├®grad├® du hover*/ }
+  .menu-item:before {
+    content: '//';
+    padding: 0 37px;
+    display: inline-block;
+    color: white; }
+  .menu-item:first-child:before {
+    display: none; }
+  .menu-item:hover {
+    color: black; }
+  .menu-item.is-active {
+    color: black; }
 
 .logoMenu {
   margin-top: -100px;
@@ -85,7 +91,13 @@ a {
   font-size: 15px;
   color: white;
   line-height: 40px;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  transition-property: background-color;
+  transition-duration: 1s;
+  /*ces 2 lignes pour d├®grad├® du hover*/
+  border-radius: 10px; }
+  .button:hover {
+    background-color: aqua; }
 
 .buttonSubject {
   display: inline-block;
@@ -94,7 +106,11 @@ a {
   font-size: 15px;
   color: white;
   line-height: 40px;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  transition-property: background-color;
+  transition-duration: 1s;
+  /*ces 2 lignes pour d├®grad├® du hover*/
+  border-radius: 10px; }
   .buttonSubject:hover {
     background-color: #f39c12; }
 
@@ -132,7 +148,8 @@ a {
   line-height: 45px; }
 
 .section-title-description {
-  margin-left: 20px; }
+  margin-left: 20px;
+  text-align: left; }
 
 .about {
   margin-top: 50px;
@@ -187,6 +204,11 @@ a {
     border-top: 4px #f39c12 solid;
     margin-top: 30px; }
 
+@keyframes opac {
+  from {
+    border: 2px white solid; }
+  to {
+    opacity: 2px white solid; } }
 .section3-content {
   margin-top: 70px;
   margin-bottom: 70px;
@@ -201,7 +223,8 @@ a {
     padding: 15px; }
     .section3-content .section3-content-subject:hover {
       border: 2px #f39c12 solid;
-      border-radius: 20px; }
+      border-radius: 20px;
+      animation: opac 1.5s; }
   .section3-content .section3-content-subject-title {
     padding-bottom: 2px;
     line-height: 0.2; }
@@ -238,7 +261,8 @@ a {
   padding: 15px; }
   .section5 .section5-content1-element:hover {
     border: 2px #f39c12 solid;
-    border-radius: 20px; }
+    border-radius: 20px;
+    animation: opac 1.5s; }
 
 .section7 .section7-content-element {
   display: flex;
@@ -255,9 +279,48 @@ a {
   padding-left: 40px; }
 
 .section8 {
-  background: url(img/header.jpg); }
+  background: url(img/header.jpg) center top fixed;
+  background-size: cover; }
   .section8 .section8-img {
     text-align: center;
-    padding: 450px 0 450px 0; }
+    padding: 350px 0 350px 0; }
+
+.section9 .section9-content-element {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; }
+.section9 .section9-content-element {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column; }
+
+.section11 .section11-content {
+  display: flex;
+  flex-direction: column; }
+.section11 .section11-element {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 30px; }
+.section11 .section11-element-img {
+  border-right: 2px #73737b solid;
+  padding-right: 80px; }
+.section11 .section11-element-texte {
+  padding-left: 30px;
+  text-align: left; }
+.section11 .section11-element-button {
+  margin-top: 100px;
+  font-size: 40px; }
+
+footer {
+  font-size: 14px;
+  padding-top: 10px; }
+  footer .footer-element {
+    display: flex;
+    justify-content: space-between; }
+  footer .footer-easter {
+    color: white; }
+    footer .footer-easter:hover {
+      color: #73737b; }
 
 /*# sourceMappingURL=style.css.map */
